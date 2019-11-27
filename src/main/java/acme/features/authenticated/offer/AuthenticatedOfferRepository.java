@@ -16,6 +16,6 @@ public interface AuthenticatedOfferRepository extends AbstractRepository {
 	Offer findOneById(int id);
 
 	@Query("select o from Offer o where o.deadline > current_timestamp")
-	Collection<Offer> findManyAll();
+	Collection<Offer> findAllActive();
 
 }
