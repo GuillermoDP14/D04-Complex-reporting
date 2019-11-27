@@ -46,6 +46,7 @@ master.menu.authenticated.offer.list = Ofertas activas
 master.menu.authenticated.company-record.list = Lista de Registros de Compañías
 master.menu.authenticated.investor-record.list =  Lista de Registros de Inversiones
 master.menu.authenticated.challenge.list = Lista de desafíos
+master.menu.authenticated.job.list = Trabajos activos
 
 # master.menu.administrator ###################################################
 

@@ -34,6 +34,7 @@ master.menu.anonymous.favourite-link = Guillermo's link
 master.menu.anonymous.company-record.list = Company Records List
 master.menu.anonymous.investor-record.list = Investor Records List
 master.menu.anonymous.announcement.list = List announcements
+master.menu.authenticated.job.list = Active jobs
 
 # master.menu.authenticated ########################################################
 

@@ -45,7 +45,7 @@ public class AuthenticatedRequestListService implements AbstractListService<Auth
 
 		Collection<Request> result;
 
-		result = this.repository.findManyAll();
+		result = this.repository.findAllActive();
 
 		return result;
 	}
