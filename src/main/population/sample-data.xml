@@ -407,5 +407,63 @@
 		<property name="finalMode" value="true" />
 		<property name="employer" ref="employer1Employer" />
 	</bean>
+	
+		<!-- Applications -->
+
+	<bean name="application1" class="acme.entities.applications.Application">
+		<property name="reference" value="EMP1-JOB1-WORK1" />		
+		<property name="moment" value="2000/12/11 23:59" />
+		<property name="status" value="PENDING" />
+		<property name="statement" value="Statement" />
+		<property name="skills" value="Useful and handful" />
+		<property name="qualifications" value="Good grade in Design and Testing" />
+		<property name="worker" ref="worker1Worker" />
+		<property name="job" ref="job1" />
+	</bean>
+	
+	<bean name="application2" class="acme.entities.applications.Application">
+		<property name="reference" value="EMP1-JOB2-WORK1" />		
+		<property name="moment" value="2000/12/11 23:59" />
+		<property name="status" value="ACCEPTED" />
+		<property name="statement" value="Statement" />
+		<property name="skills" value="Useful and handful" />
+		<property name="qualifications" value="Good grade in Design and Testing" />
+		<property name="worker" ref="worker1Worker" />
+		<property name="job" ref="job2" />
+	</bean>
+	
+	<bean name="application3" class="acme.entities.applications.Application">
+		<property name="reference" value="EMP1-JOB3-WORK1" />		
+		<property name="moment" value="2000/12/11 23:59" />
+		<property name="status" value="ACCEPTED" />
+		<property name="statement" value="Statement" />
+		<property name="skills" value="Useful and handful" />
+		<property name="qualifications" value="Good grade in Design and Testing" />
+		<property name="worker" ref="worker1Worker" />
+		<property name="job" ref="job3" />
+	</bean>
+	
+	<bean name="application4" class="acme.entities.applications.Application">
+		<property name="reference" value="EMP1-JOB4-WORK1" />		
+		<property name="moment" value="2000/11/11 23:59" />
+		<property name="status" value="REJECTED" />
+		<property name="statement" value="Statement" />
+		<property name="skills" value="Useful and handful" />
+		<property name="qualifications" value="Good grade in Design and Testing" />
+		<property name="worker" ref="worker1Worker" />
+		<property name="job" ref="job4" />
+	</bean>
+	
+	<bean name="application5" class="acme.entities.applications.Application">
+		<property name="reference" value="EMP1-JOB5-WORK1" />		
+		<property name="moment" value="2000/11/11 23:59" />
+		<property name="status" value="REJECTED" />
+		<property name="statement" value="Statement" />
+		<property name="skills" value="Useful and handful" />
+		<property name="qualifications" value="Good grade in Design and Testing" />
+		<property name="worker" ref="worker1Worker" />
+		<property name="job" ref="job5" />
+	</bean>
+	
 
 </beans>
