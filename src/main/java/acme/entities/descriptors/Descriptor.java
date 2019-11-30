@@ -4,6 +4,7 @@ package acme.entities.descriptors;
 import java.util.Collection;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.OneToMany;
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
@@ -32,7 +33,7 @@ public class Descriptor extends DomainEntity {
 
 	@NotNull
 	@Valid
-	@OneToMany
+	@OneToMany(fetch = FetchType.EAGER)
 	private Collection<Duty> duties;
 
 }

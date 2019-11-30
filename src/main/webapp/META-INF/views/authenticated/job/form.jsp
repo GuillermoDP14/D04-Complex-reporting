@@ -14,5 +14,10 @@
 	<acme:form-url code="authenticated.job.form.label.moreInfo" path="moreInfo"/>
 	<acme:form-textarea code="authenticated.job.form.label.description" path="descriptor.description"/>
 	
+		<button type="button" formmethod="get" class="btn btn-default" onclick="location.href= 'authenticated/duty/list_by_job?id=${id}'">
+		<acme:message code="authenticated.job.form.label.duties" />
+	</button>
+	
+	
 	<acme:form-return code="authenticated.job.form.button.return"/>
 </acme:form>
