@@ -18,5 +18,8 @@ employer.job.form.label.deadline = Fecha final:
 employer.job.form.label.salary = Salario:
 employer.job.form.label.moreInfo = Más información:
 employer.job.form.label.description = Descripción:
+employer.job.form.label.finalMode = Publicado:
+
+employer.job.form.label.duties = Lista de objetivos de este trabajo
 
 employer.job.form.button.return = Volver

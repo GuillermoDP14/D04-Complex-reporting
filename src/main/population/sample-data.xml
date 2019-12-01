@@ -356,11 +356,11 @@
 		<property name="reference" value="EMP1-JOB1" />
 		<property name="title" value="Title 1" />
 		<property name="deadline" value="2030/12/11 23:59" />
-		<property name="salary" value="€ 15,000.98" />
-		<property name="description" value="Consiste en lanzar aros" />
+		<property name="salary" value="€ 15,000.98" />	
 		<property name="moreInfo" value="http://www.example.com" />
 		<property name="finalMode" value="true" />
 		<property name="employer" ref="employer1Employer" />
+		<property name="descriptor" ref="descriptor1" />
 	</bean>
 
 	<bean name="job2" class="acme.entities.jobs.Job">
@@ -368,10 +368,10 @@
 		<property name="title" value="Title 2" />
 		<property name="deadline" value="2030/12/11 23:59" />
 		<property name="salary" value="€ 15,000.98" />
-		<property name="description" value="Yo solo soy un hombre" />
 		<property name="moreInfo" value="http://www.example.com" />
 		<property name="finalMode" value="true" />
 		<property name="employer" ref="employer1Employer" />
+		<property name="descriptor" ref="descriptor2" />
 	</bean>
 
 	<bean name="job3" class="acme.entities.jobs.Job">
@@ -379,10 +379,10 @@
 		<property name="title" value="Title 3" />
 		<property name="deadline" value="2030/12/11 23:59" />
 		<property name="salary" value="€ 15,000.98" />
-		<property name="description" value="Es un trabajo duro" />
 		<property name="moreInfo" value="http://www.example.com" />
 		<property name="finalMode" value="false" />
 		<property name="employer" ref="employer1Employer" />
+		<property name="descriptor" ref="descriptor3" />
 	</bean>
 
 
@@ -391,27 +391,113 @@
 		<property name="title" value="Title 4" />
 		<property name="deadline" value="2022/12/11 23:59" />
 		<property name="salary" value="€ 15,000.98" />
-		<property name="description" value="Es un trabajo fácil" />
 		<property name="moreInfo" value="http://www.example.com" />
 		<property name="finalMode" value="false" />
 		<property name="employer" ref="employer1Employer" />
+		<property name="descriptor" ref="descriptor4" />
 	</bean>
 
 	<bean name="job5" class="acme.entities.jobs.Job">
 		<property name="reference" value="EMP1-JOB5" />
 		<property name="title" value="Title 5" />
 		<property name="deadline" value="2029/12/11 23:59" />
-		<property name="salary" value="€ 15,000.98" />
-		<property name="description" value="Es un trabajo que requiere trabajo en equipo" />
+		<property name="salary" value="€ 15,000.98" />	
 		<property name="moreInfo" value="http://www.example.com" />
 		<property name="finalMode" value="true" />
 		<property name="employer" ref="employer1Employer" />
+		<property name="descriptor" ref="descriptor5" />
+	</bean>
+
+	<!-- Descriptors -->
+
+	<bean name="descriptor1" class="acme.entities.descriptors.Descriptor">
+		<property name="description" value="Es un trabajo fácil" />
+		<property name="duties">
+			<list>
+				<ref bean="duty1" />
+			</list>
+		</property>
+	</bean>
+
+	<bean name="descriptor2" class="acme.entities.descriptors.Descriptor">
+		<property name="description" value="Es un trabajo que requiere trabajo en equipo" />
+		<property name="duties">
+			<list>
+				<ref bean="duty2" />
+			</list>
+		</property>
+	</bean>
+
+	<bean name="descriptor3" class="acme.entities.descriptors.Descriptor">
+		<property name="description" value="Sample description" />
+		<property name="duties">
+			<list>
+				<ref bean="duty3" />
+			</list>
+		</property>
+	</bean>
+
+	<bean name="descriptor4" class="acme.entities.descriptors.Descriptor">
+		<property name="description" value="Sample description" />
+		<property name="duties">
+			<list>
+				<ref bean="duty4" />
+			</list>
+		</property>
+	</bean>
+
+	<bean name="descriptor5" class="acme.entities.descriptors.Descriptor">
+		<property name="description" value="Sample description" />
+		<property name="duties">
+			<list>
+				<ref bean="duty5" />
+				<ref bean="duty6" />
+			</list>
+		</property>
+	</bean>
+
+	<!-- Duties -->
+
+	<bean name="duty1" class="acme.entities.duties.Duty">
+		<property name="title" value="Main duty" />
+		<property name="description" value="Sample description" />
+		<property name="percentage" value="100.0" />		
+	</bean>
+
+	<bean name="duty2" class="acme.entities.duties.Duty">
+		<property name="title" value="Main duty" />
+		<property name="description" value="Sample description" />
+		<property name="percentage" value="100.0" />
+	</bean>
+
+	<bean name="duty3" class="acme.entities.duties.Duty">
+		<property name="title" value="Main duty" />
+		<property name="description" value="Sample description" />
+		<property name="percentage" value="100.0" />
+	</bean>
+
+	<bean name="duty4" class="acme.entities.duties.Duty">
+		<property name="title" value="Main duty" />
+		<property name="description" value="Sample description" />
+		<property name="percentage" value="100.0" />
+	</bean>
+
+	<bean name="duty5" class="acme.entities.duties.Duty">
+		<property name="title" value="Main duty" />
+		<property name="description" value="Sample description" />
+		<property name="percentage" value="100.0" />
+	</bean>
+
+	<bean name="duty6" class="acme.entities.duties.Duty">
+		<property name="title" value="Second duty" />
+		<property name="description" value="Sample description" />
+		<property name="percentage" value="100.0" />
 	</bean>
 	
-		<!-- Applications -->
+	<!-- Applications -->
 
 	<bean name="application1" class="acme.entities.applications.Application">
-		<property name="reference" value="EMP1-JOB1-WORK1" />		
+		<property name="reference" value="EMP1-JOB1-WORK1" />
 		<property name="moment" value="2000/12/11 23:59" />
 		<property name="status" value="PENDING" />
 		<property name="statement" value="Statement" />
@@ -420,9 +506,9 @@
 		<property name="worker" ref="worker1Worker" />
 		<property name="job" ref="job1" />
 	</bean>
-	
+
 	<bean name="application2" class="acme.entities.applications.Application">
-		<property name="reference" value="EMP1-JOB2-WORK1" />		
+		<property name="reference" value="EMP1-JOB2-WORK1" />
 		<property name="moment" value="2000/12/11 23:59" />
 		<property name="status" value="ACCEPTED" />
 		<property name="statement" value="Statement" />
@@ -431,9 +517,9 @@
 		<property name="worker" ref="worker1Worker" />
 		<property name="job" ref="job2" />
 	</bean>
-	
+
 	<bean name="application3" class="acme.entities.applications.Application">
-		<property name="reference" value="EMP1-JOB3-WORK1" />		
+		<property name="reference" value="EMP1-JOB3-WORK1" />
 		<property name="moment" value="2000/12/11 23:59" />
 		<property name="status" value="ACCEPTED" />
 		<property name="statement" value="Statement" />
@@ -442,9 +528,9 @@
 		<property name="worker" ref="worker1Worker" />
 		<property name="job" ref="job3" />
 	</bean>
-	
+
 	<bean name="application4" class="acme.entities.applications.Application">
-		<property name="reference" value="EMP1-JOB4-WORK1" />		
+		<property name="reference" value="EMP1-JOB4-WORK1" />
 		<property name="moment" value="2000/11/11 23:59" />
 		<property name="status" value="REJECTED" />
 		<property name="statement" value="Statement" />
@@ -453,9 +539,9 @@
 		<property name="worker" ref="worker1Worker" />
 		<property name="job" ref="job4" />
 	</bean>
-	
+
 	<bean name="application5" class="acme.entities.applications.Application">
-		<property name="reference" value="EMP1-JOB5-WORK1" />		
+		<property name="reference" value="EMP1-JOB5-WORK1" />
 		<property name="moment" value="2000/11/11 23:59" />
 		<property name="status" value="REJECTED" />
 		<property name="statement" value="Statement" />
@@ -464,6 +550,6 @@
 		<property name="worker" ref="worker1Worker" />
 		<property name="job" ref="job5" />
 	</bean>
-	
+
 
 </beans>

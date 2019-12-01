@@ -7,12 +7,17 @@
 
 <acme:form readonly="true">
 
-	<acme:form-money code="authenticated.job.form.label.reference" path="reference"/>
+	<acme:form-textbox code="authenticated.job.form.label.reference" path="reference"/>
 	<acme:form-textbox code="authenticated.job.form.label.title" path="title"/>
 	<acme:form-moment code="authenticated.job.form.label.deadline" path="deadline"/>
 	<acme:form-money code="authenticated.job.form.label.salary" path="salary" />
 	<acme:form-url code="authenticated.job.form.label.moreInfo" path="moreInfo"/>
-	<acme:form-textarea code="authenticated.job.form.label.description" path="description"/>
+	<acme:form-textarea code="authenticated.job.form.label.description" path="descriptor.description"/>
+	
+		<button type="button" formmethod="get" class="btn btn-default" onclick="location.href= 'authenticated/duty/list_by_job?id=${id}'">
+		<acme:message code="authenticated.job.form.label.duties" />
+	</button>
+	
 	
 	<acme:form-return code="authenticated.job.form.button.return"/>
 </acme:form>
