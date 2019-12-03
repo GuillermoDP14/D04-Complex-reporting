@@ -10,6 +10,7 @@ import acme.entities.applications.Application;
 import acme.entities.roles.Employer;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
+import acme.framework.entities.Principal;
 import acme.framework.services.AbstractListService;
 
 @Service
@@ -44,10 +45,10 @@ public class EmployerApplicationListByJobService implements AbstractListService<
 		assert request != null;
 
 		Collection<Application> result;
-		Integer jobId;
+		Principal principal;
 
-		jobId = request.getModel().getInteger("id");
-		result = this.repository.findApplicationsByJob(jobId);
+		principal = request.getPrincipal();
+		result = this.repository.findApplicationsByJob(principal.getActiveRoleId());
 		return result;
 	}
 
