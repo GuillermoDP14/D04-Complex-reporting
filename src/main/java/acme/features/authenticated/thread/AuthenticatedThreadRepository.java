@@ -1,8 +1,6 @@
 
 package acme.features.authenticated.thread;
 
-import java.util.Collection;
-
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
@@ -19,7 +17,8 @@ public interface AuthenticatedThreadRepository extends AbstractRepository {
 	 * Collection<Authenticated> findAllUsersWithTopics();
 	 */
 
-	@Query("select t from Thread t")
-	Collection<acme.entities.threads.Thread> findAllThread();
-
+	/*
+	 * @Query("select t from Threads t where ?1 is member of t.users")
+	 * Collection<acme.entities.threads.Thread> findAllThreadByUser(Authenticated authenticated);
+	 */
 }
