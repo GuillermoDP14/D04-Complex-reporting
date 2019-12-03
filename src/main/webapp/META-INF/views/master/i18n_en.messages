@@ -80,6 +80,11 @@ master.menu.consumer.offer.create = Throw an offer
 master.menu.employer = Employer
 master.menu.employer.job.list = Job list
 
+# master.menu.worker ##########################################################
+
+master.menu.worker = Worker
+master.menu.worker.application.list = Application list
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Account
