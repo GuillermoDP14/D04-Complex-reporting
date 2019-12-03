@@ -79,6 +79,7 @@ master.menu.consumer.offer.create = Throw an offer
 
 master.menu.employer = Employer
 master.menu.employer.job.list = Job list
+master.menu.employer.application.list = Applications by job list
 
 # master.menu.user-account ####################################################
 
