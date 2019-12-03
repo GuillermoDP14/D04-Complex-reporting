@@ -574,7 +574,7 @@ bg=orange
       <w>66</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-
+    <panel_attributes>lt=&lt;-x
 m1=1
 m2=1
 </panel_attributes>
