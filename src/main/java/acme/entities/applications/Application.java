@@ -31,6 +31,8 @@ public class Application extends DomainEntity {
 
 	private static final long	serialVersionUID	= 1L;
 
+	// Attributes -------------------------------------------------------------
+
 	@Column(unique = true)
 	@NotBlank
 	@Length(min = 5, max = 15)
@@ -52,6 +54,10 @@ public class Application extends DomainEntity {
 
 	@NotBlank
 	private String				qualifications;
+
+	// Derived attributes -----------------------------------------------------
+
+	// Relationships ----------------------------------------------------------
 
 	@NotNull
 	@Valid
