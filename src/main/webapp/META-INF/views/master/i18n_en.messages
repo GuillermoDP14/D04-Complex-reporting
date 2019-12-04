@@ -87,6 +87,12 @@ master.menu.employer.application.list = Applications by job list
 master.menu.worker = Worker
 master.menu.worker.application.list = Application list
 
+# master.menu.worker ##########################################################
+
+master.menu.auditor = Auditor
+master.menu.auditor.job.list_mine = Jobs in which I have written a audit record
+master.menu.auditor.job.list_not_mine =  Jobs in which I have not written a audit record
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Account

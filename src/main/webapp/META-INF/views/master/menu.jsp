@@ -81,6 +81,11 @@
 			<acme:menu-suboption code="master.menu.worker.application.list" action="/worker/application/list_mine"/>
 		</acme:menu-option>
 		
+				<acme:menu-option code="master.menu.auditor" access="hasRole('Auditor')">
+			<acme:menu-suboption code="master.menu.auditor.job.list_mine" action="/auditor/job/list_mine"/>
+			<acme:menu-suboption code="master.menu.auditor.job.list_not_mine" action="/auditor/job/list_not_mine"/>
+		</acme:menu-option>
+		
 	</acme:menu-left>
 	
 

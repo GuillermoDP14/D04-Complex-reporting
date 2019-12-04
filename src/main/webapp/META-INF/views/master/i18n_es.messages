@@ -89,6 +89,13 @@ master.menu.employer.application.list = Lista de solicitudes por trabajos
 master.menu.worker = Trabajador
 master.menu.worker.application.list = Lista de solicitudes
 
+# master.menu.worker ##########################################################
+
+master.menu.auditor = Auditor
+master.menu.auditor.job.list_mine = Trabajos en los que he escrito un registro de auditoria
+master.menu.auditor.job.list_not_mine =  Trabajos en los que no he escrito un registro de auditoria
+
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Cuenta
