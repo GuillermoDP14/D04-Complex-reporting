@@ -41,11 +41,12 @@ public class AuthenticatedThreadListMineService implements AbstractListService<A
 	@Override
 	public Collection<acme.entities.threads.Thread> findMany(final Request<acme.entities.threads.Thread> request) {
 		assert request != null;
-		Authenticated principal = null;
-		Collection<acme.entities.threads.Thread> result = null;
 
-		//principal = request.getPrincipal();
-		//result = this.repository.findAllThreadByUser(principal);
+		Collection<acme.entities.threads.Thread> result;
+		int principalId;
+
+		principalId = request.getPrincipal().getActiveRoleId();
+		result = this.repository.findThreadsByUserId(principalId);
 
 		return result;
 	}

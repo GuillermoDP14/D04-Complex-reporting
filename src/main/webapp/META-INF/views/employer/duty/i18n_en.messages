@@ -18,4 +18,5 @@ employer.duty.form.label.title = Title:
 employer.duty.form.label.description = Description:
 employer.duty.form.label.percentage = Work percentage:
 
-employer.duty.form.button.return = Return
+
+employer.duty.list.button.return.list = Return to job list

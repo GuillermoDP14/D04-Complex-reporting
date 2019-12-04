@@ -1,4 +1,4 @@
-# i18n_es.messages
+# i18n_en.messages
 #
 # Copyright (c) 2019 Rafael Corchuelo.
 #
@@ -8,13 +8,14 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
+authenticated.thread.list.label.title = Title
+authenticated.thread.list.label.moment = Moment
 
-authenticated.duty.list.label.title = Titulo
-authenticated.duty.list.label.percentage = Porcentaje de trabajo
-authenticated.duty.list.button.return = Volver
+authenticated.thread.form.label.title = Title:
+authenticated.thread.form.label.moment = Moment:
 
-authenticated.duty.form.label.title = Titulo:
-authenticated.duty.form.label.description = Descripción:
-authenticated.duty.form.label.percentage = Porcentaje de trabajo:
+authenticated.thread.form.label.messages = Messages from this thread
 
-authenticated.duty.form.button.return = Volver a la lista de trabajos
+authenticated.thread.button.return = Return
+
+

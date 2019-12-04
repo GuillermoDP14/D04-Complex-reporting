@@ -441,48 +441,27 @@
 
 	<bean name="descriptor1" class="acme.entities.descriptors.Descriptor">
 		<property name="description" value="Es un trabajo fácil" />
-		<property name="duties">
-			<list>
-				<ref bean="duty1" />
-			</list>
-		</property>
+
 	</bean>
 
 	<bean name="descriptor2" class="acme.entities.descriptors.Descriptor">
 		<property name="description" value="Es un trabajo que requiere trabajo en equipo" />
-		<property name="duties">
-			<list>
-				<ref bean="duty2" />
-			</list>
-		</property>
+
 	</bean>
 
 	<bean name="descriptor3" class="acme.entities.descriptors.Descriptor">
 		<property name="description" value="Sample description" />
-		<property name="duties">
-			<list>
-				<ref bean="duty3" />
-			</list>
-		</property>
+
 	</bean>
 
 	<bean name="descriptor4" class="acme.entities.descriptors.Descriptor">
 		<property name="description" value="Sample description" />
-		<property name="duties">
-			<list>
-				<ref bean="duty4" />
-			</list>
-		</property>
+
 	</bean>
 
 	<bean name="descriptor5" class="acme.entities.descriptors.Descriptor">
 		<property name="description" value="Sample description" />
-		<property name="duties">
-			<list>
-				<ref bean="duty5" />
-				<ref bean="duty6" />
-			</list>
-		</property>
+
 	</bean>
 
 	<!-- Duties -->
@@ -491,36 +470,42 @@
 		<property name="title" value="Main duty" />
 		<property name="description" value="Sample description" />
 		<property name="percentage" value="100.0" />
+		<property name="descriptor" ref="descriptor1"/>
 	</bean>
 
 	<bean name="duty2" class="acme.entities.duties.Duty">
 		<property name="title" value="Main duty" />
 		<property name="description" value="Sample description" />
 		<property name="percentage" value="100.0" />
+		<property name="descriptor" ref="descriptor2"/>		
 	</bean>
 
 	<bean name="duty3" class="acme.entities.duties.Duty">
 		<property name="title" value="Main duty" />
 		<property name="description" value="Sample description" />
 		<property name="percentage" value="100.0" />
+		<property name="descriptor" ref="descriptor3"/>
 	</bean>
 
 	<bean name="duty4" class="acme.entities.duties.Duty">
 		<property name="title" value="Main duty" />
 		<property name="description" value="Sample description" />
 		<property name="percentage" value="100.0" />
+		<property name="descriptor" ref="descriptor4"/>
 	</bean>
 
 	<bean name="duty5" class="acme.entities.duties.Duty">
 		<property name="title" value="Main duty" />
 		<property name="description" value="Sample description" />
 		<property name="percentage" value="100.0" />
+		<property name="descriptor" ref="descriptor5"/>
 	</bean>
 
 	<bean name="duty6" class="acme.entities.duties.Duty">
 		<property name="title" value="Second duty" />
 		<property name="description" value="Sample description" />
 		<property name="percentage" value="100.0" />
+		<property name="descriptor" ref="descriptor5"/>
 	</bean>
 
 	<!-- Applications -->

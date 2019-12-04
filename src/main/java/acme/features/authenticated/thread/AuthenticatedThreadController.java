@@ -33,4 +33,5 @@ public class AuthenticatedThreadController extends AbstractController<Authentica
 		super.addCustomCommand(CustomCommand.LIST_MINE, BasicCommand.LIST, this.listMineService);
 
 	}
+
 }

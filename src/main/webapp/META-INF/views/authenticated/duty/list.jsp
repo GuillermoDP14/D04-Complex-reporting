@@ -12,6 +12,3 @@
 
 <acme:form-return code="authenticated.duty.list.button.return"/>
 
-<button type="button" formmethod="get" onclick="javascript: redirect('authenticated/job/show?id=${id}')" class="btn btn-default">
-				<acme:message code="authenticated.duty.list.button.return"/>
-</button>	

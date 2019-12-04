@@ -6,16 +6,15 @@ import java.util.Collection;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import acme.entities.duties.Duty;
+import acme.entities.messages.Message;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
 public interface AuthenticatedMessageRepository extends AbstractRepository {
 
-	@Query("select j from Duty j where j.id = ?1")
-	Duty findDutyById(int id);
+	@Query("select m from Message m where m.id = ?1")
+	Message findMessageById(int id);
 
-	@Query("select j.descriptor.duties from Job j where j.id = ?1")
-	Collection<Duty> findDutiesByJob(int id);
-
+	@Query("select m from Message m where m.thread.id = ?1")
+	Collection<Message> findAllByThread(int id);
 }

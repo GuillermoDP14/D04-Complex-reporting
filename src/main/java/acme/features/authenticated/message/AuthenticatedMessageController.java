@@ -20,7 +20,7 @@ public class AuthenticatedMessageController extends AbstractController<Authentic
 	//	Internal states -------------
 
 	@Autowired
-	private AuthenticatedMessageListByThreadService	listByJobService;
+	private AuthenticatedMessageListByThreadService	listByThreadService;
 
 	@Autowired
 	private AuthenticatedMessageShowService			showService;
@@ -31,6 +31,8 @@ public class AuthenticatedMessageController extends AbstractController<Authentic
 	@PostConstruct
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
-		super.addCustomCommand(CustomCommand.LIST_BY_JOB, BasicCommand.LIST, this.listByJobService);
+		super.addCustomCommand(CustomCommand.LIST_BY_THREAD, BasicCommand.LIST, this.listByThreadService);
+
 	}
+
 }

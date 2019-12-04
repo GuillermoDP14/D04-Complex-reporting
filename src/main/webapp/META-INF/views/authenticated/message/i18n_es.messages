@@ -8,13 +8,12 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
+authenticated.message.list.label.title = Titulo
+authenticated.message.list.label.moment = Momento
 
-authenticated.duty.list.label.title = Titulo
-authenticated.duty.list.label.percentage = Porcentaje de trabajo
-authenticated.duty.list.button.return = Volver
+authenticated.message.form.label.title = Titulo:
+authenticated.message.form.label.moment = Momento:
+authenticated.message.form.label.body = Cuerpo:
+authenticated.message.form.label.tags = Tópicos:
 
-authenticated.duty.form.label.title = Titulo:
-authenticated.duty.form.label.description = Descripción:
-authenticated.duty.form.label.percentage = Porcentaje de trabajo:
-
-authenticated.duty.form.button.return = Volver a la lista de trabajos
+authenticated.message.button.return = Volver a la lista de temas

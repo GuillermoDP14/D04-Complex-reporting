@@ -102,17 +102,13 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `descriptor_duty` (
-       `descriptor_id` integer not null,
-        `duties_id` integer not null
-    ) engine=InnoDB;
-
     create table `duty` (
        `id` integer not null,
         `version` integer not null,
         `description` varchar(255),
         `percentage` double precision,
         `title` varchar(255),
+        `descriptor_id` integer not null,
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -147,6 +143,17 @@
         `title` varchar(255),
         `descriptor_id` integer not null,
         `employer_id` integer not null,
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `message` (
+       `id` integer not null,
+        `version` integer not null,
+        `body` varchar(255),
+        `moment` datetime(6),
+        `tags` varchar(255),
+        `title` varchar(255),
+        `thread_id` integer not null,
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -187,6 +194,19 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `thread` (
+       `id` integer not null,
+        `version` integer not null,
+        `moment` datetime(6),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `thread_authenticated` (
+       `thread_id` integer not null,
+        `users_id` integer not null
+    ) engine=InnoDB;
+
     create table `user_account` (
        `id` integer not null,
         `version` integer not null,
@@ -217,9 +237,6 @@
     alter table `application` 
        add constraint UK_ct7r18vvxl5g4c4k7aefpa4do unique (`reference`);
 
-    alter table `descriptor_duty` 
-       add constraint UK_kvr5rclgwa51d625rmx13ke96 unique (`duties_id`);
-
     alter table `job` 
        add constraint UK_qpodqtu8nvqkof3olnqnqcv2l unique (`descriptor_id`);
 
@@ -235,6 +252,9 @@ create index IDXg88gkl67vpjvt7ps3qc8toigb on `request` (`deadline`, `moment`);
 
     alter table `request` 
        add constraint UK_9mxq3powq8tqctclj0fbi2nih unique (`ticker`);
+
+    alter table `thread_authenticated` 
+       add constraint UK_t69jud9gwiunbu3cx39uycwxb unique (`users_id`);
 
     alter table `user_account` 
        add constraint UK_castjbvpeeus0r8lbpehiu0e4 unique (`username`);
@@ -269,13 +289,8 @@ create index IDXg88gkl67vpjvt7ps3qc8toigb on `request` (`deadline`, `moment`);
        foreign key (`user_account_id`) 
        references `user_account` (`id`);
 
-    alter table `descriptor_duty` 
-       add constraint `FK57eqqlhihwvd53ykpmsiqlx2p` 
-       foreign key (`duties_id`) 
-       references `duty` (`id`);
-
-    alter table `descriptor_duty` 
-       add constraint `FKqitedkrksd2w8qyp1fp5eao9f` 
+    alter table `duty` 
+       add constraint `FK3cc3garl37bl7gswreqwr7pj4` 
        foreign key (`descriptor_id`) 
        references `descriptor` (`id`);
 
@@ -294,10 +309,25 @@ create index IDXg88gkl67vpjvt7ps3qc8toigb on `request` (`deadline`, `moment`);
        foreign key (`employer_id`) 
        references `employer` (`id`);
 
+    alter table `message` 
+       add constraint `FK28hjkn063wrsjuiyyf8sm3s2v` 
+       foreign key (`thread_id`) 
+       references `thread` (`id`);
+
     alter table `provider` 
        add constraint FK_b1gwnjqm6ggy9yuiqm0o4rlmd 
        foreign key (`user_account_id`) 
        references `user_account` (`id`);
+
+    alter table `thread_authenticated` 
+       add constraint `FKkuamwlt147dsxim98bfhh4dsr` 
+       foreign key (`users_id`) 
+       references `authenticated` (`id`);
+
+    alter table `thread_authenticated` 
+       add constraint `FKjsja3s5mr66x5nxm9dd8kut3r` 
+       foreign key (`thread_id`) 
+       references `thread` (`id`);
 
     alter table `worker` 
        add constraint FK_l5q1f33vs2drypmbdhpdgwfv3 
