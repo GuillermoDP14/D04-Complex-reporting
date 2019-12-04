@@ -668,7 +668,7 @@
 		</property>
 	</bean>
 
-	<bean name="auditor2Auditor" class="acme.entities.roles.Auditor">
+	<bean name="auditor3Auditor" class="acme.entities.roles.Auditor">
 		<property name="firm" value="xXAuditor3Xx" />
 		<property name="responsabilityStatement" value="I got a lot of responsability" />
 		<property name="userAccount" ref="auditor3UserAccount" />
