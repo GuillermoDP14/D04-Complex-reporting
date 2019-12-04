@@ -10,3 +10,5 @@
 	<acme:list-column code="authenticated.auditRecord.list.label.moment" path="moment" width="20%"/>
 	<acme:list-column code="authenticated.auditRecord.list.label.job" path="job.title" width="20%"/>
 </acme:list>
+
+<acme:form-return code="authenticated.auditRecord.list.button.return.list"/>

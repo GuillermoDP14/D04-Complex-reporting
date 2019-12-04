@@ -6,7 +6,7 @@ import java.util.Collection;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import acme.entities.auditorRecords.AuditRecord;
+import acme.entities.auditRecords.AuditRecord;
 import acme.entities.jobs.Job;
 import acme.framework.repositories.AbstractRepository;
 

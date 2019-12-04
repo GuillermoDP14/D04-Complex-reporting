@@ -17,6 +17,5 @@ authenticated.auditRecord.form.label.deadline = Momento:
 authenticated.auditRecord.form.label.body = Cuerpo:
 authenticated.auditRecord.form.label.finalMode = Publicado
 
-authenticated.auditRecord.form.label.duties = Mostrar el trabajo de este registro
-
 authenticated.auditRecord.form.button.return = Volver
+authenticated.auditRecord.list.button.return.list = Volver a la lista de trabajos

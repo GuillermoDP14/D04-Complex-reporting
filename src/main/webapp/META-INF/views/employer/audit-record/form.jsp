@@ -14,9 +14,7 @@
 	<acme:form-checkbox code="employer.auditRecord.form.label.finalMode" path="finalMode" />
 
 		
-	<button type="button" formmethod="get" class="btn btn-default" onclick="location.href= 'authenticated/job/show_by_auditRecord?id=${id}'">
-		<acme:message code="employer.auditRecord.form.label.job" />
-	</button>
+
 	
 	<acme:form-return code="employer.auditRecord.form.button.return" />
 

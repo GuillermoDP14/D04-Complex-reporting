@@ -680,8 +680,8 @@
 	
 	<!-- Auditor records -->
 
-	<bean id="auditRecord1" class="acme.entities.auditorRecords.AuditRecord">
-		<property name="title" value="Sample auditor record 01" />
+	<bean id="auditRecord1" class="acme.entities.auditRecords.AuditRecord">
+		<property name="title" value="Sample audit record 01" />
 		<property name="moment" value="2019/11/03 10:40" />		
 		<property name="body" value="Sample body 01" />
 		<property name="finalMode" value="true" />
@@ -689,8 +689,8 @@
 		<property name="job" ref="job1" />
 	</bean>
 	
-	<bean id="auditRecord2" class="acme.entities.auditorRecords.AuditRecord">
-		<property name="title" value="Sample auditor record 02" />
+	<bean id="auditRecord2" class="acme.entities.auditRecords.AuditRecord">
+		<property name="title" value="Sample audit record 02" />
 		<property name="moment" value="2019/11/03 10:40" />		
 		<property name="body" value="Sample body 02" />
 		<property name="finalMode" value="true" />
@@ -698,8 +698,8 @@
 		<property name="job" ref="job2" />
 	</bean>
 	
-	<bean id="auditRecord3" class="acme.entities.auditorRecords.AuditRecord">
-		<property name="title" value="Sample auditor record 03" />
+	<bean id="auditRecord3" class="acme.entities.auditRecords.AuditRecord">
+		<property name="title" value="Sample audit record 03" />
 		<property name="moment" value="2019/11/03 10:40" />		
 		<property name="body" value="Sample body 03" />
 		<property name="finalMode" value="false" />
@@ -707,8 +707,8 @@
 		<property name="job" ref="job2" />
 	</bean>
 	
-	<bean id="auditRecord4" class="acme.entities.auditorRecords.AuditRecord">
-		<property name="title" value="Sample auditor record 04" />
+	<bean id="auditRecord4" class="acme.entities.auditRecords.AuditRecord">
+		<property name="title" value="Sample audit record 04" />
 		<property name="moment" value="2019/11/03 10:40" />		
 		<property name="body" value="Sample body 04" />
 		<property name="finalMode" value="true" />
@@ -716,8 +716,8 @@
 		<property name="job" ref="job5" />
 	</bean>
 	
-	<bean id="auditRecord5" class="acme.entities.auditorRecords.AuditRecord">
-		<property name="title" value="Sample auditor record 05" />
+	<bean id="auditRecord5" class="acme.entities.auditRecords.AuditRecord">
+		<property name="title" value="Sample audit record 05" />
 		<property name="moment" value="2019/11/03 10:40" />		
 		<property name="body" value="Sample body 05" />
 		<property name="finalMode" value="false" />

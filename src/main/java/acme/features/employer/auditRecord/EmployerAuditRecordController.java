@@ -8,13 +8,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import acme.components.CustomCommand;
-import acme.entities.auditorRecords.AuditRecord;
+import acme.entities.auditRecords.AuditRecord;
 import acme.entities.roles.Employer;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
 
 @Controller
-@RequestMapping("/employer/auditRecord/")
+@RequestMapping("/employer/audit-record/")
 public class EmployerAuditRecordController extends AbstractController<Employer, AuditRecord> {
 
 	//	Internal states -------------

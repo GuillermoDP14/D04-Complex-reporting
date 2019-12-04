@@ -18,6 +18,9 @@
 		<acme:message code="authenticated.job.form.label.duties" />
 	</button>
 	
+	<button type="button" formmethod="get" class="btn btn-default" onclick="location.href= 'authenticated/audit-record/list_by_job?id=${id}'">
+		<acme:message code="authenticated.job.form.label.auditRecords" />
+	</button>
 	
 	<acme:form-return code="authenticated.job.form.button.return"/>
 </acme:form>

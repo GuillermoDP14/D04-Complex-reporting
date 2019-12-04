@@ -10,5 +10,5 @@
 	<acme:list-column code="authenticated.duty.list.label.percentage" path="percentage" width="25%"/>	
 </acme:list>
 
-<acme:form-return code="authenticated.duty.list.button.return"/>
+<acme:form-return code="authenticated.duty.list.button.return.list"/>
 

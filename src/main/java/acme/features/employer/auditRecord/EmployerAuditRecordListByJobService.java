@@ -6,8 +6,7 @@ import java.util.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.auditorRecords.AuditRecord;
-import acme.entities.jobs.Job;
+import acme.entities.auditRecords.AuditRecord;
 import acme.entities.roles.Employer;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
@@ -37,7 +36,7 @@ public class EmployerAuditRecordListByJobService implements AbstractListService<
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "moment");
+		request.unbind(entity, model, "title", "moment", "job.title");
 	}
 
 	@Override
@@ -45,10 +44,7 @@ public class EmployerAuditRecordListByJobService implements AbstractListService<
 		assert request != null;
 
 		Collection<AuditRecord> result;
-		Job job;
-
-		job = this.repository.findJobById(request.getModel().getInteger("id"));
-		result = this.repository.findAuditRecordByJob(job.getId());
+		result = this.repository.findAuditRecordByJob(request.getModel().getInteger("id"));
 
 		return result;
 	}

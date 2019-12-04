@@ -21,5 +21,6 @@ employer.job.form.label.description = Descripción:
 employer.job.form.label.finalMode = Publicado
 
 employer.job.form.label.duties = Lista de tareas de este trabajo
+employer.job.form.label.auditRecords =  Lista de registros de auditoria de este trabajo
 
 employer.job.form.button.return = Volver

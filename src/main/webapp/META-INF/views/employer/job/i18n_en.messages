@@ -22,5 +22,6 @@ employer.job.form.label.description = Description:
 employer.job.form.label.finalMode = Published mode
 
 employer.job.form.label.duties = Duties list from this job
+employer.job.form.label.auditRecords = Audit records list from this job
 
 employer.job.form.button.return = Return

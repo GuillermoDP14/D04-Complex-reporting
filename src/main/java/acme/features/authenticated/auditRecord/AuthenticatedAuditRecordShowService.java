@@ -4,7 +4,7 @@ package acme.features.authenticated.auditRecord;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.auditorRecords.AuditRecord;
+import acme.entities.auditRecords.AuditRecord;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Authenticated;
@@ -19,7 +19,7 @@ public class AuthenticatedAuditRecordShowService implements AbstractShowService<
 	private AuthenticatedAuditRecordRepository repository;
 
 
-	// AbstractShowService<Authenticated, Duty> interface -----
+	// AbstractShowService<Authenticated, AuditRecord> interface -----
 
 	@Override
 	public boolean authorise(final Request<AuditRecord> request) {

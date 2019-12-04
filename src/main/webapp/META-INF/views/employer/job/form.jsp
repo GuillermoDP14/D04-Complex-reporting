@@ -20,6 +20,10 @@
 		<acme:message code="employer.job.form.label.duties" />
 	</button>
 	
+		<button type="button" formmethod="get" class="btn btn-default" onclick="location.href= 'employer/audit-record/list_by_job?id=${id}'">
+		<acme:message code="employer.job.form.label.auditRecords" />
+	</button>
+	
 	<acme:form-return code="employer.job.form.button.return" />
 
 </acme:form>
