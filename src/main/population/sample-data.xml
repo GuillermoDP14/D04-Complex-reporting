@@ -619,6 +619,86 @@
 	<bean name="auditor1Authenticated" class="acme.framework.entities.Authenticated">
 		<property name="userAccount" ref="auditor1UserAccount" />
 	</bean>
+	
+		<bean name="auditor2UserAccount" class="acme.framework.entities.UserAccount">
+		<property name="username" value="auditor2" />
+		<property name="password" value="auditor2" />
+		<property name="enabled" value="true" />
+		<property name="identity">
+			<bean class="acme.datatypes.UserIdentity">
+				<property name="name" value="Auditor" />
+				<property name="surname" value="One" />
+				<property name="email" value="auditor2@acme.com" />
+			</bean>
+		</property>
+		<property name="roles">
+			<list>
+				<ref bean="auditor2Auditor" />
+				<ref bean="auditor2Authenticated" />
+			</list>
+		</property>
+	</bean>
+
+	<bean name="auditor2Auditor" class="acme.entities.roles.Auditor">
+		<property name="firm" value="xXAuditor2Xx" />
+		<property name="responsabilityStatement" value="I got a lot of responsability" />
+		<property name="userAccount" ref="auditor2UserAccount" />
+	</bean>
+
+	<bean name="auditor2Authenticated" class="acme.framework.entities.Authenticated">
+		<property name="userAccount" ref="auditor2UserAccount" />
+	</bean>
+	
+	<!-- Auditor records -->
+
+	<bean id="auditorRecord1" class="acme.entities.auditorRecords.AuditorRecord">
+		<property name="title" value="Sample auditor record 01" />
+		<property name="moment" value="2019/11/03 10:40" />		
+		<property name="body" value="Sample body 01" />
+		<property name="finalMode" value="true" />
+		<property name="auditor" ref="auditor1Auditor" />
+		<property name="job" ref="job1" />
+	</bean>
+	
+	<bean id="auditorRecord2" class="acme.entities.auditorRecords.AuditorRecord">
+		<property name="title" value="Sample auditor record 02" />
+		<property name="moment" value="2019/11/03 10:40" />		
+		<property name="body" value="Sample body 02" />
+		<property name="finalMode" value="true" />
+		<property name="auditor" ref="auditor2Auditor" />
+		<property name="job" ref="job2" />
+	</bean>
+	
+	<bean id="auditorRecord3" class="acme.entities.auditorRecords.AuditorRecord">
+		<property name="title" value="Sample auditor record 03" />
+		<property name="moment" value="2019/11/03 10:40" />		
+		<property name="body" value="Sample body 03" />
+		<property name="finalMode" value="false" />
+		<property name="auditor" ref="auditor1Auditor" />
+		<property name="job" ref="job3" />
+	</bean>
+	
+	<bean id="auditorRecord4" class="acme.entities.auditorRecords.AuditorRecord">
+		<property name="title" value="Sample auditor record 04" />
+		<property name="moment" value="2019/11/03 10:40" />		
+		<property name="body" value="Sample body 04" />
+		<property name="finalMode" value="true" />
+		<property name="auditor" ref="auditor2Auditor" />
+		<property name="job" ref="job4" />
+	</bean>
+	
+	<bean id="auditorRecord5" class="acme.entities.auditorRecords.AuditorRecord">
+		<property name="title" value="Sample auditor record 05" />
+		<property name="moment" value="2019/11/03 10:40" />		
+		<property name="body" value="Sample body 05" />
+		<property name="finalMode" value="false" />
+		<property name="auditor" ref="auditor1Auditor" />
+		<property name="job" ref="job4" />
+	</bean>
+	
+	
+	
+	
 
 
 </beans>
