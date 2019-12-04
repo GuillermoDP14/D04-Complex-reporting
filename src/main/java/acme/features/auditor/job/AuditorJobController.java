@@ -25,6 +25,9 @@ public class AuditorJobController extends AbstractController<Auditor, Job> {
 	@Autowired
 	private AuditorJobShowService			showService;
 
+	@Autowired
+	private AuditorJobListMineService		listMineService;
+
 
 	//	Constructors ------
 
@@ -33,6 +36,7 @@ public class AuditorJobController extends AbstractController<Auditor, Job> {
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
 
 		super.addCustomCommand(CustomCommand.LIST_NOT_MINE, BasicCommand.LIST, this.listNotMineService);
+		super.addCustomCommand(CustomCommand.LIST_MINE, BasicCommand.LIST, this.listMineService);
 	}
 
 }
