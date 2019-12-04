@@ -8,5 +8,5 @@
 <acme:list>	
 	<acme:list-column code="authenticated.auditRecord.list.label.title" path="title" width="60%"/>
 	<acme:list-column code="authenticated.auditRecord.list.label.moment" path="moment" width="20%"/>
-	<acme:list-column code="authenticated.auditRecord.list.label.job" path="moment" width="20%"/>
+	<acme:list-column code="authenticated.auditRecord.list.label.job" path="job.title" width="20%"/>
 </acme:list>

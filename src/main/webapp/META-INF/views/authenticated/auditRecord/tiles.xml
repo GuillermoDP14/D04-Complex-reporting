@@ -20,12 +20,12 @@
 
 
 	
-		<definition name="employer/auditRecord/form" extends="master">		
-		<put-attribute name="body" type="template" value="../employer/auditRecord/form.jsp" />
+		<definition name="authenticated/auditRecord/form" extends="master">		
+		<put-attribute name="body" type="template" value="../authenticated/auditRecord/form.jsp" />
 	</definition>
 	
-		<definition name="employer/auditRecord/list" extends="master">		
-		<put-attribute name="body" type="template" value="../employer/auditRecord/list.jsp" />
+		<definition name="authenticated/auditRecord/list" extends="master">		
+		<put-attribute name="body" type="template" value="../authenticated/auditRecord/list.jsp" />
 	</definition>
 	
 </tiles-definitions>
