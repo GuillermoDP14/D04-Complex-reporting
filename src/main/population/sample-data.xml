@@ -651,7 +651,7 @@
 	
 	<!-- Auditor records -->
 
-	<bean id="auditorRecord1" class="acme.entities.auditorRecords.AuditorRecord">
+	<bean id="auditRecord1" class="acme.entities.auditorRecords.AuditRecord">
 		<property name="title" value="Sample auditor record 01" />
 		<property name="moment" value="2019/11/03 10:40" />		
 		<property name="body" value="Sample body 01" />
@@ -660,7 +660,7 @@
 		<property name="job" ref="job1" />
 	</bean>
 	
-	<bean id="auditorRecord2" class="acme.entities.auditorRecords.AuditorRecord">
+	<bean id="auditRecord2" class="acme.entities.auditorRecords.AuditRecord">
 		<property name="title" value="Sample auditor record 02" />
 		<property name="moment" value="2019/11/03 10:40" />		
 		<property name="body" value="Sample body 02" />
@@ -669,7 +669,7 @@
 		<property name="job" ref="job2" />
 	</bean>
 	
-	<bean id="auditorRecord3" class="acme.entities.auditorRecords.AuditorRecord">
+	<bean id="auditRecord3" class="acme.entities.auditorRecords.AuditRecord">
 		<property name="title" value="Sample auditor record 03" />
 		<property name="moment" value="2019/11/03 10:40" />		
 		<property name="body" value="Sample body 03" />
@@ -678,7 +678,7 @@
 		<property name="job" ref="job3" />
 	</bean>
 	
-	<bean id="auditorRecord4" class="acme.entities.auditorRecords.AuditorRecord">
+	<bean id="auditRecord4" class="acme.entities.auditorRecords.AuditRecord">
 		<property name="title" value="Sample auditor record 04" />
 		<property name="moment" value="2019/11/03 10:40" />		
 		<property name="body" value="Sample body 04" />
@@ -687,7 +687,7 @@
 		<property name="job" ref="job4" />
 	</bean>
 	
-	<bean id="auditorRecord5" class="acme.entities.auditorRecords.AuditorRecord">
+	<bean id="auditRecord5" class="acme.entities.auditorRecords.AuditRecord">
 		<property name="title" value="Sample auditor record 05" />
 		<property name="moment" value="2019/11/03 10:40" />		
 		<property name="body" value="Sample body 05" />
