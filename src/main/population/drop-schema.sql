@@ -15,6 +15,10 @@
        drop 
        foreign key `FKmbjdoxi3o93agxosoate4sxbt`;
 
+    alter table `auditor` 
+       drop 
+       foreign key FK_clqcq9lyspxdxcp6o4f3vkelj;
+
     alter table `authenticated` 
        drop 
        foreign key FK_h52w0f3wjoi68b63wv9vwon57;
@@ -66,6 +70,8 @@
     drop table if exists `anonymous`;
 
     drop table if exists `application`;
+
+    drop table if exists `auditor`;
 
     drop table if exists `authenticated`;
 
