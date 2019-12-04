@@ -378,6 +378,36 @@
 	<bean name="worker1Authenticated" class="acme.framework.entities.Authenticated">
 		<property name="userAccount" ref="worker1UserAccount" />
 	</bean>
+	
+		<bean name="worker2UserAccount" class="acme.framework.entities.UserAccount">
+		<property name="username" value="worker2" />
+		<property name="password" value="worker2" />
+		<property name="enabled" value="true" />
+		<property name="identity">
+			<bean class="acme.datatypes.UserIdentity">
+				<property name="name" value="Worker" />
+				<property name="surname" value="Two" />
+				<property name="email" value="worker2@acme.com" />
+			</bean>
+		</property>
+		<property name="roles">
+			<list>
+				<ref bean="worker2Worker" />
+				<ref bean="worker2Authenticated" />
+			</list>
+		</property>
+	</bean>
+
+	<bean name="worker2Worker" class="acme.entities.roles.Worker">
+		<property name="qualificationRecord" value="I have many good grades" />
+		<property name="skillRecord" value="I got a lot of skills" />
+		<property name="userAccount" ref="worker2UserAccount" />
+	</bean>
+
+	<bean name="worker2Authenticated" class="acme.framework.entities.Authenticated">
+		<property name="userAccount" ref="worker2UserAccount" />
+	</bean>
+	
 
 	<!-- Jobs -->
 
@@ -427,7 +457,7 @@
 	</bean>
 
 	<bean name="job5" class="acme.entities.jobs.Job">
-		<property name="reference" value="EMP1-JOB5" />
+		<property name="reference" value="EMP2-JOB5" />
 		<property name="title" value="Title 5" />
 		<property name="deadline" value="2029/12/11 23:59" />
 		<property name="salary" value="€ 15,000.98" />
@@ -555,13 +585,13 @@
 	</bean>
 
 	<bean name="application5" class="acme.entities.applications.Application">
-		<property name="reference" value="EMP1-JOB5-WORK1" />
+		<property name="reference" value="EMP2-JOB5-WORK2" />
 		<property name="moment" value="2000/11/11 23:59" />
 		<property name="status" value="REJECTED" />
 		<property name="statement" value="Statement" />
 		<property name="skills" value="Useful and handful" />
 		<property name="qualifications" value="Good grade in Design and Testing" />
-		<property name="worker" ref="worker1Worker" />
+		<property name="worker" ref="worker2Worker" />
 		<property name="job" ref="job5" />
 	</bean>
 
@@ -577,6 +607,17 @@
 			</list>
 		</property>
 	</bean>
+	
+	<bean id="thread2" class="acme.entities.threads.Thread">
+		<property name="title" value="Sample thread 02" />
+		<property name="moment" value="2019/11/03 10:40" />
+		<property name="users">
+			<list>
+				<ref bean="employer2Authenticated" />
+				<ref bean="employer1Authenticated" />
+			</list>
+		</property>
+	</bean>
 
 
 	<!-- Message -->
@@ -587,6 +628,14 @@
 		<property name="tags" value="Prueba, DP" />
 		<property name="body" value="Sample message 01" />
 		<property name="thread" ref="thread1" />
+	</bean>
+	
+	<bean id="message2" class="acme.entities.messages.Message">
+		<property name="title" value="Sample message 02" />
+		<property name="moment" value="2019/11/03 10:40" />	
+		<property name="tags" value="Prueba, DP" />
+		<property name="body" value="Sample message 02" />
+		<property name="thread" ref="thread2" />
 	</bean>
 	
 	<!-- Auditors -->

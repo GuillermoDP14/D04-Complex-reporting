@@ -14,6 +14,6 @@ authenticated.message.list.label.moment = Momento
 authenticated.message.form.label.title = Titulo:
 authenticated.message.form.label.moment = Momento:
 authenticated.message.form.label.body = Cuerpo:
-authenticated.message.form.label.tags = Tópicos:
+authenticated.message.form.label.tags = Tags:
 
 authenticated.message.button.return = Volver a la lista de temas

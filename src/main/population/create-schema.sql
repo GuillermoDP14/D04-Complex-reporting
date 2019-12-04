@@ -274,9 +274,6 @@ create index IDXg88gkl67vpjvt7ps3qc8toigb on `request` (`deadline`, `moment`);
     alter table `request` 
        add constraint UK_9mxq3powq8tqctclj0fbi2nih unique (`ticker`);
 
-    alter table `thread_authenticated` 
-       add constraint UK_t69jud9gwiunbu3cx39uycwxb unique (`users_id`);
-
     alter table `user_account` 
        add constraint UK_castjbvpeeus0r8lbpehiu0e4 unique (`username`);
 

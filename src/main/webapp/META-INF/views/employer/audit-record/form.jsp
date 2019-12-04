@@ -11,9 +11,7 @@
 	<acme:form-textbox code="employer.auditRecord.form.label.title" path="title" />
 	<acme:form-moment code="employer.auditRecord.form.label.moment" path="moment" />
 	<acme:form-textarea code="employer.auditRecord.form.label.body" path="body" />	
-	<acme:form-checkbox code="employer.auditRecord.form.label.finalMode" path="finalMode" />
 
-		
 
 	
 	<acme:form-return code="employer.auditRecord.form.button.return" />

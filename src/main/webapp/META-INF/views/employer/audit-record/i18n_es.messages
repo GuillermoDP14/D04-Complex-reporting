@@ -17,6 +17,6 @@ employer.auditRecord.list.button.return.list = Volver a la lista de trabajos
 employer.auditRecord.form.label.title = Titulo:
 employer.auditRecord.form.label.deadline = Momento:
 employer.auditRecord.form.label.body = Cuerpo:
-employer.auditRecord.form.label.finalMode = Publicado
+
 
 employer.auditRecord.form.button.return = Volver

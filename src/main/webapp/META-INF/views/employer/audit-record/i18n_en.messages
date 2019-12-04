@@ -18,7 +18,6 @@ employer.auditRecord.list.button.return.list = Return to the jobs list
 employer.auditRecord.form.label.title = Title:
 employer.auditRecord.form.label.moment = Moment:
 employer.auditRecord.form.label.body = Body:
-employer.auditRecord.form.label.finalMode = Published mode
 
 
 employer.auditRecord.form.button.return = Return

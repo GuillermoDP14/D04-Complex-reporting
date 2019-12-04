@@ -5,7 +5,7 @@ import java.util.Collection;
 import java.util.Date;
 
 import javax.persistence.Entity;
-import javax.persistence.OneToMany;
+import javax.persistence.ManyToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
@@ -42,7 +42,7 @@ public class Thread extends DomainEntity {
 
 	@Valid
 	@NotEmpty
-	@OneToMany
+	@ManyToMany
 	private Collection<Authenticated>	users;
 
 }

@@ -15,12 +15,12 @@ employer.application.list.label.status = Status
 
 employer.application.list.button.return = Return
 
-employer.application.form.label.reference = Reference
-employer.application.form.label.moment = Moment
-employer.application.form.label.status = Status
-employer.application.form.label.statement = Statement
-employer.application.form.label.skills = Skills 
-employer.application.form.label.qualifications =  Qualifications
-employer.application.form.label.worker = Worker
+employer.application.form.label.reference = Reference:
+employer.application.form.label.moment = Moment:
+employer.application.form.label.status = Status:
+employer.application.form.label.statement = Statement:
+employer.application.form.label.skills = Skills:
+employer.application.form.label.qualifications =  Qualifications:
+employer.application.form.label.worker = Worker who requested:
 
 employer.application.form.button.return = Return

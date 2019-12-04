@@ -12,11 +12,12 @@ worker.application.list.label.reference = Referencia
 worker.application.list.label.moment = Momento
 worker.application.list.label.status = Estado
 
-worker.application.form.label.reference = Referencia
-worker.application.form.label.moment = Momento
-worker.application.form.label.status = Estado
-worker.application.form.label.statement = Declaración
-worker.application.label.skills = Habilidades
-worker.application.label.qualifications = Calificaciones
+worker.application.form.label.reference = Referencia:
+worker.application.form.label.moment = Momento:
+worker.application.form.label.status = Estado:
+worker.application.form.label.statement = Declaración:
+worker.application.label.skills = Habilidades:
+worker.application.label.qualifications = Calificaciones:
+worker.application.label.job = Titulo del trabajo: 
 
 worker.application.form.button.return = Volver

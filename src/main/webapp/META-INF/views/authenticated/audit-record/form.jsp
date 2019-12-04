@@ -10,8 +10,7 @@
 	<acme:form-textbox code="authenticated.auditRecord.form.label.title" path="title" />
 	<acme:form-moment code="authenticated.auditRecord.form.label.moment" path="moment" />
 	<acme:form-textarea code="authenticated.auditRecord.form.label.body" path="body" />	
-	<acme:form-checkbox code="authenticated.auditRecord.form.label.finalMode" path="finalMode" />
-	
+		
 	<acme:form-return code="authenticated.auditRecord.form.button.return" />
 
 </acme:form>

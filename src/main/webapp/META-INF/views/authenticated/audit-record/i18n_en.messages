@@ -16,7 +16,7 @@ authenticated.auditRecord.list.label.title = Title
 authenticated.auditRecord.form.label.title = Title:
 authenticated.auditRecord.form.label.moment = Moment:
 authenticated.auditRecord.form.label.body = Body:
-authenticated.auditRecord.form.label.finalMode = Published mode
+
 
 authenticated.auditRecord.form.button.return = Return
 authenticated.auditRecord.list.button.return.list = Return to the job list

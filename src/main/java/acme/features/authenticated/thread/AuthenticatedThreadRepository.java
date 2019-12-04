@@ -15,6 +15,6 @@ public interface AuthenticatedThreadRepository extends AbstractRepository {
 	acme.entities.threads.Thread findThreadById(int id);
 
 	@Query("select t from Thread t join t.users u where u.id = ?1")
-	Collection<acme.entities.threads.Thread> findThreadsByUserId(final int id);
+	Collection<acme.entities.threads.Thread> findThreadsByUserId(int id);
 
 }
