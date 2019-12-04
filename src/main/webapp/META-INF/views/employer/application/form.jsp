@@ -13,6 +13,7 @@
 	<acme:form-textbox code="employer.application.form.label.statement" path="statement"/>
 	<acme:form-textbox code="employer.application.form.label.skills" path="skills"/>
 	<acme:form-textbox code="employer.application.form.label.qualifications" path="qualifications"/>
+	<acme:form-textbox code="employer.application.form.label.worker" path="worker.userAccount.username"/>
 	
 	<acme:form-return code="employer.application.form.button.return"/>	
 </acme:form>
