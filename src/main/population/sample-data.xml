@@ -638,6 +638,22 @@
 		<property name="thread" ref="thread2" />
 	</bean>
 	
+		<bean id="message3" class="acme.entities.messages.Message">
+		<property name="title" value="Sample message 03" />
+		<property name="moment" value="2019/11/03 10:40" />	
+		<property name="tags" value="Prueba, DP" />
+		<property name="body" value="Sample message 03" />
+		<property name="thread" ref="thread2" />
+	</bean>
+	
+			<bean id="message4" class="acme.entities.messages.Message">
+		<property name="title" value="Sample message 04" />
+		<property name="moment" value="2019/11/03 10:40" />	
+		<property name="tags" value="Prueba, DP" />
+		<property name="body" value="Sample message 04" />
+		<property name="thread" ref="thread1" />
+	</bean>
+	
 	<!-- Auditors -->
 
 	<bean name="auditor1UserAccount" class="acme.framework.entities.UserAccount">
