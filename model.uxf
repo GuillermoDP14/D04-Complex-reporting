@@ -518,24 +518,6 @@ m2=0..n
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
-      <y>110</y>
-      <w>220</w>
-      <h>100</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Enum&gt;&gt;
-CustomCommand
---
-+ LIST_MINE
-+ LIST_BY_JOB
-+ LIST_BY_THREAD
-
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
       <x>1510</x>
       <y>460</y>
       <w>220</w>
@@ -744,5 +726,24 @@ m1=1
 m2=0..n
 </panel_attributes>
     <additional_attributes>10.0;90.0;120.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>120</y>
+      <w>220</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+CustomCommand
+--
++ LIST_MINE
++ LIST_BY_JOB
++ LIST_BY_THREAD
++ LIST_NOT_MINE
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
